@@ -1,0 +1,295 @@
+#portfolio{
+    width: 100%;
+    height: 100vh;
+    margin: 200px auto;   
+}
+
+#main-portfolio-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+#bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('../media/backgrounds/K2.jpg');
+    background-size: cover;
+    filter: grayscale(100%);
+}
+
+#bg div{
+    width: 100%;
+    height: 100%;
+    background-color: #131313e6;
+}
+
+.element {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    margin: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--light);
+    font-size: 3rem;
+}
+
+.main-element {
+    width: 440px;
+    height: 440px;
+    grid-column: 3/1;
+    grid-row: 3/1;
+    transition-duration: 1000ms;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+#inner-container{
+    width: 100%;
+    height: 100%;
+    background-image: url('../media/backgrounds/testowe3.png');
+    filter: blur(3px) grayscale(80%);
+    transition-duration: 1s;
+    position: absolute;
+    z-index: 0; 
+}
+
+#inner-elements{
+    z-index: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+@keyframes items-slide{
+    0%{
+        transform: translateX(-300px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.main-element > #inner-elements > p:not(#second-text){
+    color: var(--lighter-blue);
+    font-family: 'Calibri';
+    font-weight: bold;
+    z-index: 1;
+    animation: items-slide 700ms;
+}
+
+.main-element > #inner-elements > img{
+    z-index: 1;
+    animation: items-slide 1s;
+    transition-duration: 1s;
+    width: 70%;
+    margin: 40px auto;
+}
+
+.main-element:hover > #inner-container{transform: scale(1.25);}
+
+.main-element:hover > #inner-elements > img{transform: scale(1.25);}
+
+#second-text{
+    color: var(--light);
+    font-family: 'Calibri';
+    font-size: 1.3rem;
+    bottom: 0;
+    animation: items-slide 500ms;
+}
+
+#inner-portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    position: relative;
+}
+
+#inner-portfolio:hover::before{inset: -70px auto auto -70px;}
+
+#inner-portfolio:hover::after{inset: auto -70px -70px auto;}
+
+#inner-portfolio::before{
+    content: ' ';
+    position: absolute;
+    width: 25%;
+    height: 50%;
+    inset: -50px auto auto -50px;
+    border-left: solid 5px var(--def-blue);
+    border-top: solid 5px var(--def-blue);
+    transition-duration: 1000ms;
+}
+
+#inner-portfolio::after{
+    content: ' ';
+    position: absolute;
+    width: 25%;
+    height: 50%;
+    inset: auto -50px -50px auto;
+    border-bottom: solid 5px var(--def-blue);
+    border-right: solid 5px var(--def-blue);
+    transition-duration: 1000ms;
+}
+
+.other-element{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.other-element > img{
+    z-index: 1;
+    transition-duration: 1s;
+    animation: items-slide 1s;
+    width: 80%;
+}
+
+#inner-banner{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('../media/backgrounds/test2.jpg');
+    z-index: 0;
+    background-size: cover;
+    filter: blur(2px);
+    transition-duration: 1s;
+}
+
+#bl7 > #inner-banner{background-image: url('../media/backgrounds/testowe2.png');}
+#bl5 > #inner-banner{background-image: url('../media/backgrounds/testowe.png');}
+#bl2 > #inner-banner{background-image: url('../media/backgrounds/testowe4.png');}
+#bl4 > #inner-banner{background-image: url('../media/backgrounds/testowe5.png');}
+#bl6 > #inner-banner{background-image: url('../media/backgrounds/w2.jpg');}
+
+.other-element:hover > #inner-banner{transform: scale(1.25);}
+.other-element:hover > img{transform: scale(1.25);}
+
+#portfolio-info{
+    position: fixed;
+    width: 60%;
+    height: 70%;
+    inset: 50% auto auto 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    z-index: 11;
+}
+
+#portfolio-desc-bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: radial-gradient(circle, #282828, #0d0d0d);
+    z-index: -1;
+}
+
+#portfolio-info-left{
+    float: left;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#portfolio-info-left > img{
+    width: 80%;
+    aspect-ratio: 16/9;
+    margin: 10px auto;
+    box-shadow: 1px 1px 10px #0d0d0d;
+    filter: grayscale(50%);
+    transition-duration: 500ms;
+    border-radius: 5px;
+}
+
+#portfolio-info-left > img:hover{
+    box-shadow: 1px 1px 10px var(--lighter-blue);
+    filter: none;
+}
+
+#portfolio-info-right{
+    float: right;
+    width: 50%;
+    height: 100%;
+    padding: 40px 40px 40px 0;
+    position: relative;
+}
+
+#project-name{
+    font-size: 2.3rem;
+    color: var(--def-blue);
+    font-weight: bold;
+    margin: 20px auto;
+    position: relative;
+}
+
+#project-describe{
+    color: var(--light);
+    font-size: 20px;
+    font-weight: 100;
+    margin-right: 50px;
+}
+
+#project-link{
+    color: var(--light);
+    font-size: 1.2rem;
+    margin-top: 80px;
+    margin-bottom: 10px;
+}
+
+#portfolio-info-right > a{
+    color: #264dc1;
+    word-break: break-all;
+}
+
+#tags{
+    position: absolute;
+    bottom: 40px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.tag{
+    background-color: #0E374F;
+    border-radius: 50px;
+}
+
+.tag > p{
+    color: var(--light);
+    margin: 10px 20px;
+}
+
+#dark-background-portfolio{
+    width: 100%;
+    height: 100%;
+    background-color: #212121af;
+    position: fixed;
+    inset: 0 auto auto 0;
+    z-index: 11;
+}
+
+#xmark{
+    position: absolute;
+    inset: 30px 30px auto auto;
+    font-size: 3rem;
+    cursor: pointer;
+    transition-duration: 500ms;
+}
+
+#xmark:hover{
+    transform: rotate(180deg);
+    color: var(--def-blue)
+}

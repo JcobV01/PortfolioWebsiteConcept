@@ -1,0 +1,107 @@
+<projects>
+    <JSD>
+        <name>JavaScript Diagrams</name>
+        <desc>Aplikacja ta jest stworzona do pracy ze schematami blokowymi prostych programów. Jest ona ciagle w budowie, ponieważ mam w planach rozwijać ją dalej za pomocą interakcji z użytkownikami. JavaScript Diagrams docelowo będzie przeznaczone dla szkół, które na lekcjach informatyki uczą algorytmów i pracy ze schematami blokowymi. Jest to onlinowy odpowiednik desktopowej aplikacji JavaBlock. Mam w planach rozwijać tę aplikację i dodawać do niej wiele nowych funkcjonalności.</desc>
+        <img>
+            <i1>JSD-screen-1.png</i1>
+            <i2>JSD-screen-2.png</i2>
+        </img>
+        <link>https://jakub.przybyslawice.kylos.pl</link>
+        <tags>
+            <t1>HTML</t1>
+            <t2>JS</t2>
+            <t3>PHP</t3>
+            <t4>Diagrams</t4>
+        </tags>
+    </JSD>
+    <ToDo>
+        <name>ToDoList</name>
+        <desc>Jest to typowy notatnik do tworzenia list zadań w różnych dziedzinach. Aplikacja pozwala na tworzenie widoków, czyli zbiorów zadań o danej tematyce, dzięki czemu nasze zajęcia będą odpowiednio posegregowane. W każdym widoku jesteśmy w stanie stworzyć nieskończoną ilość zadań, które możemy edytować i odpowiednio oznaczać. Po zakończeniu zadania, jednym kliknięciem przenosimy je do zakładki "ukończone". ToDoList jest to prosta strona przeznaczona dla ludzi lubiących organizować swój czas.</desc>
+        <img>
+            <i1>ToDo-screen-1.png</i1>
+            <i2>ToDo-screen-2.png</i2>
+        </img>
+        <link>https://todo.przybyslawice.kylos.pl</link>
+        <tags>
+            <t1>JS</t1>
+            <t2>HTML</t2>
+            <t3>Notes</t3>
+            <t4>Użytkownicy</t4>
+        </tags>
+    </ToDo>
+    <JSDB>
+        <name>JavaScript Diagrams Blog</name>
+        <desc>Ta platforma nie jest jeszcze zbudowana. W planach jest stworzenie strony, która będzie służyła do interakcji z użytkownikami przy tworzeniu aplikacji JavaScript Diagrams. Każdy będzie mógł zaproponować swoje zmiany, przedstawić pomysły na rozwój, wyrazić swoją opinię, wspomóc projekt. Później mam w planach przekształcić platformę JSD Blog w miejsce, gdzie każdy będzie mógł utworzyć swój projekt i otrzymać pomysły, propozycje i opinię na temat swojej pracy.</desc>
+        <img>
+            <i1></i1>
+            <i2></i2>
+        </img>
+        <link>https://google.com</link>
+        <tags>
+            <t1>Pomoc</t1>
+            <t2>JavaScript</t2>
+            <t3>PHP</t3>
+            <t4>Projekty</t4>
+        </tags>
+    </JSDB>
+    <Parafia>
+        <name>Parafia Pw. Niepokalanego Serca NMP</name>
+        <desc>Jest to strona stworzona na potrzeby parafii rzymskokatolickiej pw. Niepokalanego Serca Najświętszej Maryi Panny w Przybysławicach. Strona posiada informacje na tematy związane z funkcjonowaniem parafii, aktualizowane w każdym tygodniu ogłoszenia, aktualne wydarzenia oraz galerię zdjęć. Strona tej prarafii zbudowana jest na systemie CMS Wordpress, co usprawnia dodawanie nowych postów, ogłoszeń czy informacji.</desc>
+        <img>
+            <i1>Parafia-screen-1.png</i1>
+            <i2>Parafia-screen-2.png</i2>
+        </img>
+        <link>https://przybyslawice.diecezja.tarnow.pl</link>
+        <tags>
+            <t1>Wordpress</t1>
+            <t2>Motywy</t2>
+            <t3>Wizytówka</t3>
+            <t4>PHP</t4>
+        </tags>
+    </Parafia>
+    <AMOS>
+        <name>Stowarzyszenie AMOS</name>
+        <desc>Strona internetowa stowarzyszenia AMOS jest odświeżoną wersją wcześniejszej wersji. Aktualnie Strona korzysta z CMS Wordpress, natomiast poprzednia wersja korzystała z CMS Joomla. Odświeżona wersja była tworzona przez dwie osoby. Strona została przeniesiona, wygląd został odświeżony oraz została dostosowana według zasad dostędności dla osób z niepełnosprawnością.</desc>
+        <img>
+            <i1>AMOS-screen-1.png</i1>
+            <i2>AMOS-screen-2.png</i2>
+        </img>
+        <link>http://stowarzyszenie.amos.org.pl</link>
+        <tags>
+            <t1>Stowarzyszenie</t1>
+            <t2>Wordpress</t2>
+            <t3>CSS</t3>
+            <t4>PHP</t4>
+        </tags>
+    </AMOS>
+    <WADYCKI>
+        <name>Strona wizytówka</name>
+        <desc>Strona, na której aktualnie się znajdujemy jest moją wizytówką i prezentacją mojego portfolio jak i social mediów. Służy ona do zebrania i prezentacji moich osiągnięć i umiejętności. Zbiera ona wszystkie informacje o mnie jeśli chodzi o ścieżkę zawodową i prezentuje w przystępny sposób dla potencjalnych pracodawców lub zwykłych ludzi, którzy chcą obejrzeć, a może podzielić się swoja opinią.</desc>
+        <img>
+            <i1></i1>
+            <i2></i2>
+        </img>
+        <link>https://google.com</link>
+        <tags>
+            <t1>JavaScript</t1>
+            <t2>HTML</t2>
+            <t3>CSS</t3>
+            <t4>XML</t4>
+            <t5>Wizytówka</t5>
+        </tags>
+    </WADYCKI>
+    <XO>
+        <name>TicTacToe</name>
+        <desc>Mimo, że tworzenie gier nie jest moją główną pasją, to stworzyłem swoją wersję popularnej gry kółko krzyżyk. Był to projekt na ocenę z przedmiotu. Gra zawiera trzy tryby: 3x3, 4x4 i najbardziej rozbudowany, czyli sandbox. Pierwsze dwa polegają na ustawieniu trzech znaków w jednej linii. Wygrywa jeden z 2 graczy, który zrobi to szybciej. Natomiast wersja sandbox stworzona jest dla czterech graczy. Zawiera ona losowo rozstawione przeszkody na planszy, które utrudniają zwycięstwo. Aby wygrać należy ustawić sześć znaków w jednej linii.</desc>
+        <img>
+            <i1>TTT-screen-1.png</i1>
+            <i2>TTT-screen-2.png</i2>
+        </img>
+        <link>https://jcobv01.github.io/TicTacToe/</link>
+        <tags>
+            <t1>Gra</t1>
+            <t2>JavaScript</t2>
+            <t3>KółkoKrzyżyk</t3>
+        </tags>
+    </XO>
+</projects>

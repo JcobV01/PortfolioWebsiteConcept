@@ -1,0 +1,346 @@
+@media only screen and (max-width: 1600px) {
+    /*header*/
+    #about-me-left p:nth-child(1){font-size: 1.5rem;}
+    #about-me-left p:nth-child(2){font-size: 2rem;}
+
+    /*navigation*/
+
+    #left-nav,
+    #right-nav{
+        width: 60px;
+        min-height: auto;
+        height: 400px;
+    }
+
+    #left-nav .fa-solid{font-size: 1.7rem;}
+    #right-nav > div > p{font-size: 1.2rem;}
+
+    /*about me*/
+
+    .about-me-box > i{font-size: 2.5rem;}
+
+    .shapes{
+        width: 70%;
+        margin-right: 0;
+    }
+
+    section{
+        margin-top: 0;
+    }
+
+    .about-me-box{
+        padding: 30px 10%;
+        font-size: 1rem;
+    }
+
+    #about-me-more{
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .left-about-me{
+        height: 50%;
+        margin-bottom: 30px;
+    }
+
+    .right-about-me{
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    /*skills*/
+
+    .skills-container > div{
+        width: 170px;
+        height: 170px;
+    }
+
+    .skills-container > div > i{font-size: 3.7rem;}
+    .skills-container > div > p{font-size: 1.3rem;}
+
+    /*portfolio*/
+
+    .element{
+        width: 170px;
+        height: 170px;
+        margin: 15px;
+    }
+
+    .main-element{
+        width: 370px;
+        height: 370px;
+    }
+
+    #inner-elements > p:nth-child(2){font-size: 2rem; margin-bottom: 10px;}
+    #inner-elements > p:nth-child(3){font-size: 1.2rem;}
+    #inner-portfolio::before,#inner-portfolio::after{display: none;}
+
+    /*contact*/
+
+    #both-contact{padding: 40px;}
+    #left-contact div p:nth-child(1){font-size: 2.2rem;}
+    #left-contact div p:nth-child(2){font-size: 1.4rem;}
+
+    /*footer*/
+
+    footer{height: calc(30vh + 60px); padding-block: 30px;}
+
+    /*project info box*/
+    #portfolio-info{width: 70%;}
+    #project-name{font-size: 2rem; margin: 10px auto;}
+    #project-describe{font-size: 1rem;}
+    #project-link{font-size: 1.1rem; margin-top: 20px;}
+    #tags{bottom: 30px; gap: 7px}
+    .tag p{font-size: 0.9rem;}
+}
+
+
+@media only screen and (max-width: 1280px) {
+    /* nav */
+    
+    #left-nav,
+    #right-nav{
+        width: 50px;
+        height: 350px;
+    }
+
+    #left-nav :is(.fa-solid, .fa-brands){font-size: 1.3rem;}
+    #right-nav > div > p{font-size: 1rem;}
+
+    /* header */
+
+    #about-me-left p:nth-child(2){font-size: 1.7rem;}
+    #about-me-left  div :is(input, button){font-size: 1rem; height: 40px;}
+
+    #about-me-right{justify-content: end;}
+
+    /* aboutme */
+
+    .about-me-box{font-size: 0.75rem; padding: 20px 10%; min-width: 150px;}
+    .about-me-box .fa-solid{font-size: 2rem;}
+
+    /* technologies */
+    
+    #technologies > h3{font: 2rem 'Jura';}
+    .skills-container{gap: 10px; margin-top: 15px;}
+    .skills-container div{width: 150px; height: 150px;}
+    .skills-container div iconify{font-size: 3rem;}
+    .skills-container div p{font-size: 1rem;}
+
+    /* portfolio */
+
+
+    .element{
+        width: 150px;
+        height: 150px;
+        margin: 10px;
+    }
+
+    .main-element{
+        width: 320px;
+        height: 320px;
+    }
+
+    #inner-elements > p:nth-child(2){font-size: 1.7rem; margin-bottom: 10px;}
+    #inner-elements > p:nth-child(3){font-size: 1rem;}
+    #inner-portfolio::before,#inner-portfolio::after{display: none;}
+
+    /* contact */
+
+    #both-contact{padding: 40px;}
+    #left-contact div p:nth-child(1){font-size: 2rem;}
+    #left-contact div p:nth-child(2){font-size: 1.2rem;}
+    .contact-social-media > a > i{font-size: 2rem;}
+    #right-contact form{width: 90%;}
+
+    /* quote */
+
+    .quote > div > p:nth-child(1){font-size: 2rem;}
+    .quote > div > p:nth-child(2){font-size: 1.3rem; margin-top: 10px;}
+
+    /* footer */
+
+    .footer-heading{font-size: 1.8rem;}
+    .footer-contact{font-size: 1.3rem;}
+    .center-inside button{margin-top: 20px;}
+
+    /*project info box*/
+
+    #portfolio-info{width: 70%;}
+    #portfolio-info-right{padding: 20px 20px 20px 0;}
+    #project-name{font-size: 2rem; margin: 5px auto;}
+    #project-describe{font-size:1rem;}
+    #project-link{font-size: 1.1rem; margin-top: 20px;}
+    #project-link-w{font-size: 1.1rem;}
+    #tags{bottom: 15px; gap: 5px}
+    .tag p{font-size: 0.6rem;}
+}
+
+@media only screen and (max-width: 1024px) {
+    /* header */
+
+    header{display: flex; flex-direction: column-reverse; justify-content: start;}
+
+    .header-shapes{width: 60%;}
+
+    #about-me-left,
+    #about-me-right{
+        float: none; 
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #about-me-right{margin-top: 100px; height: 50%;}
+
+    #about-me-left div{width: 80%;}
+    #about-me-left > div > input{width: 80%;}
+
+    /* aboutme */
+
+    .right-about-me{width: 80%; grid-template-columns: 1fr 1fr;}
+    .left-about-me{margin-bottom: 0;}
+    .shapes{width: 100%;}
+
+    /* portfolio */
+
+    #inner-portfolio{grid-template-columns: 1fr 1fr 1fr;}
+
+    /* contact */
+
+    #contact{width: 70% !important;}
+    #both-contact{padding: 30px;}
+    #left-contact,
+    #right-contact{float: none; height: 50%; width: 100%;}
+    .contact-social-media{justify-content: center; margin-top: 40px;}
+    #left-contact{justify-content: start;}
+    #right-contact form{width: 100%; gap: 15px;}
+
+    /* quote */
+
+    .quote > div > p:nth-child(1){font-size: 1.5rem;}
+    .quote > div > p:nth-child(2){font-size: 1rem;}
+
+    /* footer */
+
+    #logo-bottom p{font-size: 1rem;}
+    #social-media > a > i{font-size: 2rem;}
+    .footer-heading{font-size: 1.5rem;}
+    .footer-contact, .center-inside button{font-size: 1rem;} 
+
+    /*project info box*/
+
+    #portfolio-info-left,
+    #portfolio-info-right{float: none; width: 100%; height: 50%;}
+    #portfolio-info-left{padding-top: 20px;}
+    #portfolio-info-left img{width: 50%;}
+    #portfolio-info-right{padding: 30px;}
+
+    #portfolio-info{height: 80%;}
+
+    #project-name{font-size: 1.5rem; margin: 5px auto;}
+    #project-describe{font-size:0.9rem;}
+    #project-link{font-size: 0.8rem; margin-top: 20px;}
+    #project-link-w{font-size: 0.8rem;}
+}
+
+@media only screen and (max-width: 767px){
+
+    section:not(#portfolio, .quote){height: auto;}
+    #portfolio{height: auto;}
+
+    /* nav */
+
+    #left-nav{
+        height: 50px;
+        width: 350px;
+        inset: auto auto 20px 50%;
+        transform: translate(-50%, 0);
+        flex-direction: row;
+    }
+
+    #right-nav{
+        height: 50px;
+        width: 350px;
+        inset: 20px auto auto 50%;
+        transform: translate(-50%, 0);
+    }
+
+    #right-nav > div > p{float: left; margin: 0 15px}
+
+    /* header */
+    header{margin: 0 auto 100px auto;}
+
+    #about-me-left{
+        text-align: center;
+        justify-content: start;
+        margin-top: 50px;
+    }
+
+    #about-me-left p:nth-child(1){font-size: 1.3rem;}
+    #about-me-left p:nth-child(2){font-size: 1.5rem;}
+    #about-me-left div{width: 90%;}
+
+    #header-shapes{width: 75%;}
+
+    /* aboutme */
+
+    #about-me-more{height: auto;}
+    .left-about-me{margin-block: 100px; width: 80%;}
+    .shapes{width: 100%;}
+
+    .right-about-me{
+        width: 70%;
+        grid-template-columns: 1fr;
+    }
+
+    /* technologies */
+
+    #technologies{padding-top: 100px; }
+
+    /* portfolio */
+
+    #inner-portfolio{margin-block:100px; grid-template-columns: 1fr 1fr;}
+
+    /* contact */
+
+    #contact{width: 90% !important; margin-top: 100px;}
+    #contact-bg{height: 100%;}
+    #left-contact div p:nth-child(1){font-size: 1.7rem;}
+    #left-contact div p:nth-child(2){font-size: 1rem;}
+
+    .contact-social-media{margin-block: 20px}
+
+    #contact-bg, #both-contact{margin-top: 100px;}
+
+    /* quote */
+
+    .quote{margin-top: 0;}
+    .quote div{width: 90%; padding: 30px 50px;}
+
+    /* footer */
+
+    footer{
+        padding-bottom: 100px;
+        height: calc(50vh + 60px);
+        display: block;
+    }
+
+    .footer-section{
+        width: 100%;
+        height: 50%;
+        float: none;
+    }
+    
+    /*project info box*/
+
+    #xmark{font-size: 2rem;}
+    #portfolio-info{width: 90%; height: 80%;}
+    #portfolio-info-right{height: 60%; padding: 0 17px}
+    #portfolio-info-left{height: 40%;}
+    #project-name{font-size: 1.4rem; margin: 5px auto;}
+    #project-describe{font-size:0.8rem;}
+    #project-link{font-size: 0.7rem; margin-top: 20px;}
+    #project-link-w{font-size: 0.7rem;}
+}
+

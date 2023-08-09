@@ -1,0 +1,134 @@
+header{
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto 200px auto;
+}
+
+#about-me-right{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+}
+
+.header-shapes{
+    position: relative;
+    width: 75%;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-shapes div:nth-child(1){
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 72% 28% 63% 37% / 79% 61% 39% 21% ;
+    background: linear-gradient(140deg, var(--def-blue), #00546b);
+    animation: anim1 1s;
+}
+
+.header-shapes div:nth-child(2){
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 21% 79% 27% 73% / 30% 52% 48% 70%  ;
+    background-image: url('../media/prof.jpg');
+    background-size: cover;
+    animation: anim1 1.5s;
+}
+
+#about-me-left{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    float:left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#about-me-left p:nth-child(1){
+    color: var(--def-blue);
+    font-size: 2rem;
+    animation-name: anim2;
+    animation-duration: 1s;
+}
+
+#about-me-left p:nth-child(2){
+    color: var(--light);
+    font-size: 2.5rem;
+    animation-name: anim2;
+    animation-duration: 1.5s;
+}
+
+#about-me-left > div{
+    width: 100%;
+    margin-top: 50px;
+    animation-name: anim2;
+    animation-duration: 2s;
+}
+
+#about-me-left > div > button{
+    float: left;
+    width: 20%;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 0 20px 20px 0;
+    font-family: 'Calibri';
+    font-size: 1.1rem;
+    font-weight: 700;
+    background:linear-gradient(270deg, var(--def-blue), #357087);
+    color: var(--light);
+    cursor: pointer;
+    transition-duration: 500ms;
+}
+
+#about-me-left > div > button:hover{font-size: larger;}
+
+#about-me-left > div > input{
+    float: left;
+    width: 60%;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding: 0 20px;
+    border-radius: 20px 0 0 20px;
+    font-family: 'Calibri';
+    font-size: 1.1rem;
+    font-weight: 700;
+    background-color: #357087;
+    color: var(--light);
+}
+
+#about-me-left > div > input::placeholder{
+    color: rgb(209, 209, 209);
+    font-weight: 300;
+}
+
+@keyframes anim1{
+    0%{
+        display: none;
+        transform: translateX(300%);
+    }
+    100%{
+        display: block;
+        transform: translateX(0);
+    }
+}
+
+@keyframes anim2{
+    0%{
+        display: none;
+        transform: translateX(-300%);
+    }
+    100%{
+        display: block;
+        transform: translateX(0);
+    }
+}
